@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<phpunit bootstrap="bootstrap.php" colors="true" stopOnFailure="false" verbose="true">
+  <php>
+    <env name="WP_TESTS_DIR" value="/Users/anand346/Local Sites/testing-2/app/public/tests/phpunit" />
+  </php>
+
+  <testsuites>
+    <testsuite name="Plugin">
+      <directory prefix="test-" suffix=".php">./</directory>
+    </testsuite>
+  </testsuites>
+
+  <logging>
+    <log type="coverage-html" target="coverage/"/>
+  </logging>
+</phpunit>
