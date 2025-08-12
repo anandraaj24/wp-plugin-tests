@@ -2,6 +2,10 @@
 
 First copy the wordpress-develop tests folder in the public folder i.e., sibling to wp-content
 
+Dont forget to change the plugin file name
+
+```dirname(__DIR__) . '/test-plugin.php';``` in ```bootstrap.php``` and ```test-smoke.php```
+
 This guide shows how to set up and run PHPUnit tests for your plugin entirely inside `wp-content/plugins/test-plugin/tests`.
 
 ### 1) Folder layout
