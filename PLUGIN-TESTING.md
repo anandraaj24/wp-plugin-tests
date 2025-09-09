@@ -6,6 +6,9 @@ Dont forget to change the plugin file name
 
 ```dirname(__DIR__) . '/test-plugin.php';``` in ```bootstrap.php``` and ```test-smoke.php```
 
+change the ```ABSPATH``` to point to the ```/public``` directory of site in ```wp-tests-config.php``` under ```tests/phpunit``` folder
+run the tests from ```WP-CLI``` only
+
 This guide shows how to set up and run PHPUnit tests for your plugin entirely inside `wp-content/plugins/test-plugin/tests`.
 
 ### 1) Folder layout
